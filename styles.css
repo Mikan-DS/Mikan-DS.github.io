@@ -9,6 +9,14 @@ h1 {
 
 }
 
+bold {
+	
+	color: #a33;
+	
+}
+
+
+
 header{
   top: 0%;
   width: 100%;
@@ -21,7 +29,8 @@ section{
 	
 
 	
-	padding: 30px;
+	margin:30px;
+	width:100%;
 	
 	
 }
@@ -33,7 +42,7 @@ aside{
 	
 	position: absolute;
 	
-	width: 100%;
+	width:auto;
 	height: 100%;
 	
 
@@ -42,18 +51,19 @@ aside{
 
 article{
 	
-	float:right;
-	display: inline;
+
 	
 	background-color: #fff;
 	color: #333;
 	padding: 100px;
-	margin: 20px;
+	margin: auto;
 	border: 10px solid black;
 	border-radius: 50px;
 	opacity: 0.8;
 	
-	width:60%;
+	width:50%;
+	
+	font-size: 125%;
 	
 }
 
@@ -63,4 +73,31 @@ article{
 	background-color:white;
 	text-align: center;	
 	
+}
+
+.contacts_capsule{
+
+	border: 3px solid gray;
+	border-radius: 50px;
+	
+}
+
+@media (max-width: 800px) {
+  aside {
+    display: none;
+  }
+  
+  article{
+	  width:auto;
+	  float:center;
+	  display:block;
+	  padding:10px;
+	  font-size: 100%;
+  }
+  
+  section{
+	  margin:auto;
+	  margin-top:60px;
+  }
+  
 }
