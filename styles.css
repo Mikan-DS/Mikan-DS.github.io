@@ -67,6 +67,34 @@ article{
 	
 }
 
+.flag{
+	height: 25px;
+	width: auto;
+	border: 1px solid #0000;
+}
+
+.flag:hover{
+	border: 1px solid yellow;
+}
+
+button{
+	background-color:#0000;
+	border: 1px solid #0000;
+	padding:0px;
+	margin:0px;
+}
+
+
+#language_choice{
+  position: fixed;
+  top: 8px;
+  right: 16px;
+  display:inline;
+	
+	
+	
+}
+
 #contacts{
 	border: 1px solid gray;
 	width: 15%;

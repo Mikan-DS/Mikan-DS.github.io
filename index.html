@@ -17,7 +17,7 @@
 	  document.getElementById("russian_lang_text").style.display = "none";
 	}
 	</script>
-	
+	<script src="languages.js"></script>
 	
 </head>
 <body>
@@ -25,7 +25,6 @@
 <header>
 	<h1>ミカン &#127818; Mikan</h1>
 </header>
-
 
 <section>
 	<aside>
@@ -52,11 +51,10 @@
 		</div>
 
 	</aside>
+	
 
 	<article>
 		</br></br>
-		<p id="demo">A Paragraph</p>
-		<button type="button" onclick="myFunction()" style='background-image:url("/images/flags/russian.jpg")'>Try it</button>
 		<div id="russian_lang_text">
 			<h2 style="text-align: center;">Рад с вами познакомиться!</h2>
 			
@@ -121,7 +119,61 @@
 			возможность для мультиплеерной игры по локальной сети.</p>
 		
 		</div>
+	
+		<div id="english_lang_text">
+			<h2 style="text-align: center;">Nice to meet you!</h2>
+			
+			<p>
+				Welcome to my resume page. You can call me Mikan or Mikki.
+				I started programming at the age of 13,
+				and at the moment I can program in such languages as Python, C#, C++, Java, and JavaScript.
+				
+			</p>
+			
+			<h3>Python</h3>
+			
+			<p>
+				My main tool is this flexible and beautiful language.
+				And I know how to use popular frameworks like PyGame, Tkinter, and Kivy. </br>
+				I have some experience in working with api libraries for creating bots in Vkontakte and Telegram.
+				And also, a lot of experience with creating visual novels on the Renderware'Py engine. </br>
+				I love python, and I want to improve my skills in it!
+			</p>
+			
+			<h3>C#</h3>
+			
+			<p>
+				CS is the second language I use.
+				First of all, because you can use it to create games on Unity,
+				which is what I'm trying to do.
+			</p>
+			
+			<h3>C++, Java, and JavaScript</h3>
+			
+			<p>
+				I know these three languages up to a certain level,
+				but since I didn't have any tasks for them, I don't have much experience
+			</p>
+			
+			</br></br></br>
+			
+			<h2>Q&A</h2>
+			
+			<bold>Q: Your future plans?</bold>
+			<p>A: My biggest goal is to develop neural networks,
+			or general-purpose" AI". But, I also want to make an effort in creating games.</p>		
+			</br>
+			<bold>Q: Why "Mikan"?</bold>
+			<p>A: Well, since childhood I did not like my original name,
+			but I did not want to invent a new nickname every time. But, orange 🍊,
+			which is translated from Japanese Mikan, is a healthy and delicious citrus :)</p>		
+			</br>
+			<bold>Q: Japan, Japan, Japan... Are u a fan of this country?</bold>
+			<p>О: Yes, I do. I love it, I learn its language, and, in future, I would like to find a job there</p>
+			
 		
+		</div>
+	
 		</br>
 		
 		<div style="width:90%; float:center;text-align:center;">
@@ -143,6 +195,12 @@
 		
 	</article>
 </section>
-	
+
+<div id="language_choice">
+<button type="button" onclick="RussianVersion()"><img class="flag" src="images/flags/russian.jpg" alt="Russian" ></button>
+
+<button type="button" onclick="EnglishVersion()"><img type="button" class="flag" src="images/flags/english.jpg" alt="English"></button>
+</div>
+
 </body>
 </html>
