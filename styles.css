@@ -69,7 +69,7 @@ article{
 }
 
 .flag{
-	height: 25px;
+	height: 20px;
 	width: auto;
 	border: 1px solid #0000;
 }
@@ -126,11 +126,17 @@ button{
 	  display:block;
 	  padding:10px;
 	  font-size: 100%;
+	  border: 6px solid black;
+	  margin:auto;
   }
   
   section{
 	  margin:auto;
 	  margin-top:60px;
+  }
+  
+  #language_choice{
+	  position: absolute;
   }
   
 }
