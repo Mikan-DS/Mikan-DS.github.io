@@ -12,11 +12,6 @@
 
 	<link rel="icon" href="images/Mikan_logo.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="images/Mikan_logo.ico" type="image/x-icon">
-	<script>
-	function myFunction() {
-	  document.getElementById("russian_lang_text").style.display = "none";
-	}
-	</script>
 	<script src="languages.js"></script>
 	
 </head>
@@ -113,14 +108,17 @@
 			в будущем я планирую устроиться там на работу.</p>
 			
 			</br>
+			<div class="hidden_div">
 			<bold>В: Твои самые крутые проекты?</bold>
 			<p>О: Почти полная копия игры Antiyoy, только написанная 
 			не на джаве, а на питоне в pygame. Целевая разница, это 
 			возможность для мультиплеерной игры по локальной сети.</p>
+			</br>
+			</div>
 		
 		</div>
 	
-		<div id="english_lang_text">
+		<div id="english_lang_text" style="display:none;">
 			<h2 style="text-align: center;">Nice to meet you!</h2>
 			
 			<p>
@@ -197,9 +195,9 @@
 </section>
 
 <div id="language_choice">
-<button type="button" onclick="RussianVersion()"><img class="flag" src="images/flags/russian.jpg" alt="Russian" ></button>
+<button type="button" onclick="RussianVersion()"><img class="flag" src="images/flags/russian.jpg" alt="Russian"></button>
 
-<button type="button" onclick="EnglishVersion()"><img type="button" class="flag" src="images/flags/english.jpg" alt="English"></button>
+<button type="button" onclick="EnglishVersion()"><img class="flag" src="images/flags/english.jpg" alt="English"></button>
 </div>
 
 </body>
