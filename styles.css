@@ -68,6 +68,10 @@ article{
 	
 }
 
+p{
+	margin: 20px;
+}
+
 .flag{
 	height: 20px;
 	width: auto;
@@ -115,6 +119,15 @@ button{
 	
 }
 
+.project_image{
+	float:left;
+	width:24%;
+	height:24%;
+	margin:2%;
+}
+
+
+
 @media (max-width: 800px) {
   aside {
     display: none;
@@ -139,4 +152,9 @@ button{
 	  position: absolute;
   }
   
+  .project_image{
+	  width:50%;
+	  height:50%;
+	  float:center;
+  }
 }
