@@ -1,160 +1,147 @@
 body {
-  background-color: #f97;
-  background-image: url("images/bg.webp");
-  background-repeat: repeat;
+    background-color: #000;
+    color: white;
 }
 h1 {
-  color: #444;
-  font-family: verdana;
-  font-size: 300%;
+  color: #FFF;
+  /*font-family: 'Inter';*/
+  font-size: 4vw;
 
 }
-
-bold {
-	
-	color: #a33;
-	
-}
-
-
 
 header{
-  top: 0%;
-  width: 100%;
-  text-align: center;	
-  height: 100px;
-	
-}
-
-section{
-	
-
-	
-	margin:30px;
-	width:100%;
-	
-	
-}
-
-
-aside{
-	
-	display: inline;
-	
-	position: absolute;
-	
-	width:auto;
-	height: 100%;
-	
+    width: 100%;
+    /*text-align: center;*/
+    height: 10%;
+    position: fixed;
+    top: 0;
+    padding-left: 15%;
+    z-index: -1;
 
 	
 }
+#content{
+    margin: auto;
+    margin-top: 10%;
+    background-color: black;
+    width: 73%;
 
-article{
-	
 
-	
-	background-color: #fff;
-	color: #333;
-	padding: 100px;
-	margin: auto;
-	border: 10px solid black;
-	border-radius: 50px;
-	opacity: 0.8;
-	
-	width:50%;
-	
-	font-size: 125%;
-	
-}
 
-p{
-	margin: 20px;
-}
-
-.flag{
-	height: 20px;
-	width: auto;
-	border: 1px solid #0000;
-}
-
-.flag:hover{
-	border: 1px solid yellow;
-}
-
-.hidden_div{
-	display:none;
-}
-
-button{
-	background-color:#0000;
-	border: 1px solid #0000;
-	padding:0px;
-	margin:0px;
 }
 
 
-#language_choice{
-  position: fixed;
-  top: 8px;
-  right: 16px;
-  display:inline;
-	
-	
-	
+#stickside {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+    /*margin-top: 30px;*/
+    float: right;
+    vertical-align: top;
+    width: 25%;
+    display: inline;
+
 }
 
-#contacts{
-	border: 1px solid gray;
-	width: 15%;
-	background-color:white;
-	text-align: center;	
-	
-}
+#stickside > div{
+    margin-left: auto;
+    width: 90%;
+    border: 2px dashed #00FFD1;
+    padding: 3%;
+    margin-bottom: 10%;
+    overflow: hidden;
 
-.contacts_capsule{
 
-	border: 3px solid gray;
-	border-radius: 50px;
-	
-}
-
-.project_image{
-	float:left;
-	width:24%;
-	height:24%;
-	margin:2%;
 }
 
 
+#about{
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+    font-size: 150%;
+}
 
-@media (max-width: 800px) {
-  aside {
-    display: none;
-  }
-  
-  article{
-	  width:auto;
-	  float:center;
-	  display:block;
-	  padding:10px;
-	  font-size: 100%;
-	  border: 6px solid black;
-	  margin:auto;
-  }
-  
-  section{
-	  margin:auto;
-	  margin-top:60px;
-  }
-  
-  #language_choice{
-	  position: absolute;
-  }
-  
-  .project_image{
-	  width:50%;
-	  height:50%;
-	  float:center;
-  }
+#about > div{
+    padding: 3%;
+    border: 3px dashed #FF00E5;
+    border-radius: 3%;
+
+
+}
+
+a{
+    font-size: 23px;
+    color: white;
+}
+
+a > img{
+    height: 23px;
+}
+
+#previewimage{
+    max-width: 100%;
+    width: fit-content;
+}
+
+#changelanguage{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: bisque;
+
+    border-bottom-left-radius: 5px;
+    z-index: 1;
+
+
+}
+
+#changelanguage > button{
+    background-color:#0000;
+    border: 1px solid #0000;
+
+}
+
+#changelanguage > button > img{
+    max-height: 30px;
+    width: auto;
+    border: 1px solid #0000;
+}
+
+#changelanguage > button > img:hover{
+
+    border: 1px solid yellow;
+}
+
+@media (max-width: 900px){
+    #content{
+        width: 95%;
+    }
+}
+
+@media (max-width: 700px){
+    #stickside{
+        position: relative;
+        display: block;
+        width: 100%;
+        top: 0;
+        margin: auto;
+        float: top;
+        padding-top: 30px;
+        background: black;
+
+    }
+    #stickside > div{
+        padding: 3%;
+        border-radius: 3%;
+        width: auto;
+        margin: auto;
+    }
+    #about{
+        display: block;
+        width: 100%;
+    }
+    #stickside > div:nth-child(2){
+        display: none;
+    }
 }
