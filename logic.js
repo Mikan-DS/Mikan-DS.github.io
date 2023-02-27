@@ -2,51 +2,49 @@
 var ischanging = false;
 
 const russian = [
-    'Меня зовут Сэм, но в некоторых кругах меня знают как “Микан”.',
+    'Меня зовут Сэм и в некоторых кругах меня знают как “Микан”.',
 
-    "Я программист и разработчик игр (и модов к ним). И хоть я все еще студент, \
-        при помощи своего желания развиваться и улучшать свои навыки - имею опыт во многих сферах.",
+    "Я программист, разработчик игр и модов к ним. В данный момент студент по направлению \" Информационные системы и програмирование\" но я занимаюсь саморазвитием, поэтому есть опыт в разных сферах.",
 
-    "Моим основным языком программирования является Python. \
-        С помощью него я создавал решения на Tkinter, PyGame, Kivy, Django и многих других. \
-        Был опыт в создании ботов VK, Telegram.",
+    "В основном работаю на языке программирования \"Python\". Создаю решения на Tkinter, PyGame, Kivy, Django. Был опыт в создании ботов VK и Telegram.",
 
-    "Особенно хочется выделить Ren’Py, \
-        игровом движке для создания визуальных новелл, \
-        на котором я разрабатывал новеллы с уникальным интерфейсом и даже игры в жанре “Квест”. \
-        Помимо этого принимал участие в разработке различных модов для игры “Бесконечное Лето”, \
-        в общей сложности заинтересовав более 48 тысяч пользователей.",
+    "Могу выделить игровой движок для создания визуальных новелл\"Ren’Py\", на котором я разрабатываю новеллы с уникальным интерфейсом и даже игры в жанре “Квест”. " +
+    "Так же принимал участие в разработке различных модов для игры “Бесконечное Лето”, где более 48 тысяч пользователей.",
 
-    "Unity, как популярный игровой движок для разработки, так-же был мною использован. \
-        С помощью его и C# создавались небольшие проекты, например настольные онлайн игры.",
+    "Далее использую популярный игровой движок \"Unity\" и C# где создавались небольшие проекты, такие как настольные онлайн игры.",
 
-    "Помимо этого так-же имел незначительный опыт с такими языками, \
-        фреймворками и технологиями как: C++, Java, Web, 1C, SQL, WebSocket, \
-        SocketIO и множество, множество другого, и еще больше будет дальше."
+    "Помимо этого есть незначительный опыт с такими языками как фреймворками и технологиями как C++, Java, Web, 1C, SQL, WebSocket, SocketIO. Я открыт для изучения и внедрения других программ что пополнит мой опыт."
 ]
 
 const english = [
-    'My name is Sam, but someone know me as “Mikan”.',
+    'My name is Sam, in some communities I am known as ' +
+    'Mikan.',
 
-    "I am a programmer and indie-developer of games (and also mods for some of other games). And although \
-    I am still a student, aiming to develop and improve my skills - I tried myself in different areas.",
+    "I am a programmer as well as a developer of games \
+including modes to them. In addition to being a student \
+with a major in Information Systems and Programming, I \
+go in for self-development and constantly enhance my \
+skills, so I have experience in various fields.",
 
-    "Python is my primary language. \
-        By using Python I made many applications with different frameworks like Tkinter, PyGame, Kivy, Django and etc. \
-        Also I had experience in creating VK and Telegram bots.",
+    "Basically, I use Python as a language of programming. I \
+create solutions in Tkinter, PyGame, Kivy, and Django. I \
+also have experience in creating VK and Telegram bots.",
 
-    "I especially want to highlight Ren'Py," +
-        'game engine for creating visual novels, \
-        on which I developed novels with a unique interface and even games in the "Quest" genre. \
-        In addition, I took part in the development of various mods for the game “Everlasting Summer”, \
-        in total, having interested more than 48 thousand players.',
+    "I would like to highlight the game engine Ren’Py that I use \
+for creating and developing visual novels with unique \
+    interfaces and even games in the genre Quest. \
+    I also took part in the development of various modes for \
+    the game \"Endless Summer\", which has more than 48 \
+thousand users.",
 
-    "Unity, as a popular game engine for development, was also used by me. \
-        Unity and C# were used to create small projects, for example online board games.",
+    "Further, I use the popular game engine Unity and C#, \
+where small projects were created, such as online board \
+games.",
 
-    "In addition, I also had little experience with such languages,, \
-        frameworks and technologies such as: C++, Java, Web, 1C, SQL, WebSocket, \
-        SocketIO and many, many more, and more to come."
+    "In addition, I have some experience working with \
+languages, frameworks and technologies such as C++, Java, Web, 1C, SQL, WebSocket, and SocketIO. I am \
+open to learning and implementing other programs to add \
+to my experience."
 ]
 
 
@@ -81,9 +79,9 @@ async function changePreview(){
         targetimage.src = "./images/previews/esmg.png";
         await sleep(4000);
         targetimage.src = "./images/previews/Timo.png";
-        if (2+1>5){
-            return
-        }
+        await sleep(4000);
+        targetimage.src = "./images/previews/gow.png";
+
     }
 
 }
@@ -142,10 +140,12 @@ function changeLanguage(language){
 }
 
 function setRussian(){
-
+    document.getElementById("findmehere").innerHTML = "Найти меня можно здесь:";
     changeLanguage(russian)
 }
 function setEnglish(){
+    document.getElementById("findmehere").innerHTML = "You can find me here:";
+
     changeLanguage(english)
 
 }
